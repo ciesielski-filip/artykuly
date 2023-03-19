@@ -6,6 +6,8 @@
     --darkblue: #023047;
     --blue: #219ebc;
     --lightblue: #becae6;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
     display: grid;
@@ -19,12 +21,13 @@ body {
     width: 500px;
     height: auto;
     gap: 30px;
-    margin-top: 20px; 
+    margin-top: 30px; 
 }
 h1 {
     color: var(--darkblue);
     font-size: 50px;
     cursor: pointer;
+    padding: 40px;
 }
 .line {
     background-color: var(--darkblue);
@@ -55,6 +58,11 @@ h1 {
     scale: 1.1;
     background-color: var(--yellow);
     animation: slide 1s forwards;
+    transition: 0.7s;
+}
+.art:hover {
+    transform: scale(1.5);
+    transition: 0.7s;
 }
 .hover {
     background-color: var(--orange);
@@ -73,12 +81,10 @@ h1 {
 }
 @keyframes slide {
     0% {
-        /* transform: translateY(-100px); */
         scale: 0;
         opacity: 0;
     }
     100% {
-        /* transform: translateY(0); */
         scale: 1.1;
         opacity: 1;
     }
