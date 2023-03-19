@@ -51,13 +51,13 @@ h1 {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px var(--darkblue);
-    scale: 1.1;
     margin-bottom: 50px;
+    scale: 1.1;
     background-color: var(--yellow);
+    animation: slide 1s forwards;
 }
 .hover {
     background-color: var(--orange);
-    border: 3px solid var(--darkblue);
     animation: puls 1.5s infinite;
 }
 @keyframes puls{
@@ -69,5 +69,17 @@ h1 {
     }
     100%{
         scale: 1;
+    }
+}
+@keyframes slide {
+    0% {
+        /* transform: translateY(-100px); */
+        scale: 0;
+        opacity: 0;
+    }
+    100% {
+        /* transform: translateY(0); */
+        scale: 1.1;
+        opacity: 1;
     }
 }
