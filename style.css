@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 * {
     font-family: 'Comfortaa';
+    --orange: #fb8500;
+    --yellow: #ffb703;
+    --darkblue: #023047;
+    --blue: #219ebc;
+    --lightblue: #becae6;
 }
 body {
     display: grid;
     place-items: center;
+    background-color: var(--blue);
 }
 .container {
     display: flex;
@@ -15,17 +21,12 @@ body {
     gap: 30px;
     margin-top: 20px; 
 }
-.art {
-    display: none;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
 h1 {
-    font-size: 40px;
+    color: var(--darkblue);
+    font-size: 50px;
 }
 .line {
-    background-color: black;
+    background-color: var(--darkblue);
     height: 3px;
     width: 100%;
 }
@@ -33,16 +34,39 @@ h1 {
     width: 500px;
     padding: 20px;
     border: none;
-    background-color: rgb(108, 180, 204);
+    background-color: var(--yellow);
     border-radius: 20px;
     text-align: center;
+    color: var(--darkblue);
     font-size: 20px;
     cursor: pointer;
+    border: 3px solid var(--darkblue);
 }
 .btnArt:hover {
-    background-color: rgb(80, 133, 151);
+    background-color: var(--orange);
 }
-p {
-    padding-right: 20px;
-    padding-left: 20px;
+.art {
+    display: none;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px var(--darkblue);
+    scale: 1.1;
+    margin-bottom: 50px;
+    background-color: var(--yellow);
+}
+.hover {
+    background-color: var(--orange);
+    border: 3px solid var(--darkblue);
+    animation: puls 1.5s infinite;
+}
+@keyframes puls{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.03;
+    }
+    100%{
+        scale: 1;
+    }
 }
