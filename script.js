@@ -38,3 +38,6 @@ function article4() {
     document.getElementById("art3").style.display = "none"
     document.getElementById("art4").style.display = "inline"
 }
+function reload() {
+    document.location.reload()
+}
