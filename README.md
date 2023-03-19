@@ -1,1 +1,1 @@
-# test
+# Strona o artykułach
