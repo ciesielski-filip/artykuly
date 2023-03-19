@@ -45,9 +45,11 @@ h1 {
     font-size: 20px;
     cursor: pointer;
     border: 3px solid var(--darkblue);
+    transition: 0.4s;
 }
 .btnArt:hover {
     background-color: var(--orange);
+    transition: 0.4s;
 }
 .art {
     display: none;
@@ -63,10 +65,12 @@ h1 {
 .art:hover {
     transform: scale(1.5);
     transition: 0.7s;
+    background-color: var(--orange);
 }
-.hover {
+.colorBtnHover {
     background-color: var(--orange);
     animation: puls 1.5s infinite;
+    font-weight: bold;
 }
 @keyframes puls{
     0%{
