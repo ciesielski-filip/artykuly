@@ -46,10 +46,10 @@ h1 {
     cursor: pointer;
     border: 3px solid $darkblue;
     transition: 0.4s;
-}
-.btnArt:hover {
-    background-color: $orange;
-    transition: 0.4s;
+    &:hover {
+        background-color: $orange;
+        transition: 0.4s;
+    }
 }
 .art {
     display: none;
@@ -61,10 +61,10 @@ h1 {
     background-color: $yellow;
     animation: slide 1s forwards;
     transition: 0.7s;
-}
-.art:hover {
-    transform: scale(1.5);
-    transition: 0.7s;
+    &:hover {
+        transform: scale(1.5);
+        transition: 0.7s;
+    } 
 }
 .colorBtnHover {
     background-color: $orange;
