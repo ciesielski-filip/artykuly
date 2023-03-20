@@ -72,15 +72,9 @@ h1 {
     font-weight: bold;
 }
 @keyframes puls{
-    0%{
-        scale: 1;
-    }
-    50%{
-        scale: 1.03;
-    }
-    100%{
-        scale: 1;
-    }
+    0% {scale: 1;}
+    50% {scale: 1.03;}
+    100% {scale: 1;}
 }
 @keyframes slide {
     0% {
