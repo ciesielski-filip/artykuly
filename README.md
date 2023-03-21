@@ -1,1 +1,1 @@
-# Strona o artykułach
+# Strona z artykułami
