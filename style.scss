@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-$orange: #fb8500;
-$yellow: #ffb703;
-$darkblue: #023047;
-$blue: #219ebc;
+$green-grey: #bdd3c7;
+$light-green: #67997c;
+$green: #277045;
+$dark-green: #0f2c1a;
 * {
     font-family: 'Comfortaa';
     margin: 0;
@@ -12,7 +12,20 @@ $blue: #219ebc;
 body {
     display: grid;
     place-items: center;
-    background-color: $blue;
+    background-color: $green-grey;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.circle {
+    background-color: $light-green;
+    border-radius: 50%;
+    padding: 10px;
+}
+.plant {
+    width: 80px;
+    cursor: pointer;
 }
 .container {
     display: flex;
@@ -24,13 +37,13 @@ body {
     margin-top: 30px;
 }
 h1 {
-    color: $darkblue;
+    color: $dark-green;
     font-size: 50px;
     cursor: pointer;
     padding: 40px;
 }
 .line {
-    background-color: $darkblue;
+    background-color: $dark-green;
     height: 3px;
     width: 100%;
 }
@@ -38,38 +51,38 @@ h1 {
     width: 500px;
     padding: 20px;
     border: none;
-    background-color: $yellow;
+    background-color: $light-green;
     border-radius: 20px;
     text-align: center;
-    color: $darkblue;
+    color: $dark-green;
     font-size: 20px;
     cursor: pointer;
-    border: 3px solid $darkblue;
+    border: 3px solid $dark-green;
     transition: 0.4s;
     &:hover {
-        background-color: $orange;
+        background-color: $green;
+        color: $green-grey;
         transition: 0.4s;
+    }
+    &:active {
+        scale: 0.95;
     }
 }
 .art {
     display: none;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px 0px $darkblue;
+    box-shadow: 0px 0px 30px 0px $dark-green;
     margin-bottom: 50px;
     scale: 1.1;
-    background-color: $yellow;
+    background-color: $light-green;
     animation: slide 1s forwards;
     transition: 0.7s;
-    &:hover {
-        transform: scale(1.5);
-        transition: 0.7s;
-    } 
 }
 .colorBtnHover {
-    background-color: $orange;
-    animation: puls 1.5s infinite;
-    font-weight: bold;
+    background-color: $green;
+    color: $green-grey;
+    animation: puls 2s infinite;
 }
 @keyframes puls{
     0% {scale: 1;}

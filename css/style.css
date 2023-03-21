@@ -9,7 +9,23 @@
 body {
   display: grid;
   place-items: center;
-  background-color: #219ebc;
+  background-color: #bdd3c7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  background-color: #67997c;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.plant {
+  width: 80px;
+  cursor: pointer;
 }
 
 .container {
@@ -23,14 +39,14 @@ body {
 }
 
 h1 {
-  color: #023047;
+  color: #0f2c1a;
   font-size: 50px;
   cursor: pointer;
   padding: 40px;
 }
 
 .line {
-  background-color: #023047;
+  background-color: #0f2c1a;
   height: 3px;
   width: 100%;
 }
@@ -39,40 +55,40 @@ h1 {
   width: 500px;
   padding: 20px;
   border: none;
-  background-color: #ffb703;
+  background-color: #67997c;
   border-radius: 20px;
   text-align: center;
-  color: #023047;
+  color: #0f2c1a;
   font-size: 20px;
   cursor: pointer;
-  border: 3px solid #023047;
+  border: 3px solid #0f2c1a;
   transition: 0.4s;
 }
 .btnArt:hover {
-  background-color: #fb8500;
+  background-color: #277045;
+  color: #bdd3c7;
   transition: 0.4s;
+}
+.btnArt:active {
+  scale: 0.95;
 }
 
 .art {
   display: none;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 30px 0px #023047;
+  box-shadow: 0px 0px 30px 0px #0f2c1a;
   margin-bottom: 50px;
   scale: 1.1;
-  background-color: #ffb703;
+  background-color: #67997c;
   animation: slide 1s forwards;
-  transition: 0.7s;
-}
-.art:hover {
-  transform: scale(1.5);
   transition: 0.7s;
 }
 
 .colorBtnHover {
-  background-color: #fb8500;
-  animation: puls 1.5s infinite;
-  font-weight: bold;
+  background-color: #277045;
+  color: #bdd3c7;
+  animation: puls 2s infinite;
 }
 
 @keyframes puls {

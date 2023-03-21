@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/article.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/plant.png" type="image/x-icon">
     <title>Artykuły</title>
 </head>
 <body>
-    <h1 onclick="reload()">Artykuły</h1>
+    <header>
+        <h1 onclick="reload()">Artykuły</h1>
+        <div class="circle">
+            <img src="images/plant.png" alt="" class="plant" onclick="reload()">
+        </div>
+    </header>
     <span class="line"></span>
     <div class="container">
         <input type="button" value="Artykuł 1" onclick="article1()" class="btnArt" id="btnArt1">
