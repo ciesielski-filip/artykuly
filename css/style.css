@@ -21,6 +21,10 @@ header {
   background-color: #67997c;
   border-radius: 50%;
   padding: 10px;
+  transition: 0.3s;
+}
+.circle:hover {
+  scale: 1.05;
 }
 
 .plant {
@@ -43,6 +47,10 @@ h1 {
   font-size: 50px;
   cursor: pointer;
   padding: 40px;
+  transition: 0.3s;
+}
+h1:hover {
+  scale: 1.05;
 }
 
 .line {
@@ -111,4 +119,4 @@ h1 {
     scale: 1.1;
     opacity: 1;
   }
-}
+}/*# sourceMappingURL=style.css.map */
